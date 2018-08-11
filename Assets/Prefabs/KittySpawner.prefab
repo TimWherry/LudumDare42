@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1479948456869324}
+  m_IsPrefabAsset: 1
+--- !u!1 &1479948456869324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4893527640768104}
+  - component: {fileID: 114112394662795100}
+  m_Layer: 0
+  m_Name: KittySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4893527640768104
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1479948456869324}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114112394662795100
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1479948456869324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ac784dadf56c54d8a907278497887c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BaseKitty: {fileID: 1089415202561828, guid: 00092b1dfedcb6a418e283746c67b92a,
+    type: 2}
+  m_KittyTraitImages:
+  - {fileID: 1417671606508022, guid: 9ddd96760055f9445a0bb78fd6e61400, type: 2}
+  - {fileID: 1169605609518588, guid: bdf1af9e6f8e16341b4e1f9bddb6b83f, type: 2}
+  - {fileID: 1056635149393334, guid: 2edda8716e6647444adc2efbb0648831, type: 2}
+  - {fileID: 1263373978030470, guid: 4ed1ff679537dc94ebff88dd075d544b, type: 2}
