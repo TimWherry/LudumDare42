@@ -50,7 +50,9 @@ public class scr_KittyMover : MonoBehaviour
 
     private void f_SetRandomDecoration()
     {
-        int index = Random.Range(0, m_Decorations.Length);
+        int index = Random.Range(-1, m_Decorations.Length);
+        if (index == -1)
+            return;
         GameObject newDeco = GameObject.Instantiate(m_Decorations[index], m_KittyDecoration.transform.position, Quaternion.identity);
         newDeco.transform.parent = m_KittyDecoration.transform;
         newDeco.transform.localPosition = new Vector3(0.0f, 0.0f, -0.001f);
