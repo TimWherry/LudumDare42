@@ -37,7 +37,6 @@ public class scr_KittySpawner : MonoBehaviour
         for (int i = 0; i < numTraits; ++i)
         {
             firstTrait = KittyEnums.GetRandomTrait(firstTrait);
-            Debug.Log(firstTrait);
             if (firstTrait != eKittyTrait.None && firstTrait != eKittyTrait.Max)
             {
                 script.f_SetTrait(i, firstTrait, GameObject.Instantiate(m_KittyTraitImages[(int)firstTrait], Vector3.zero, Quaternion.identity));

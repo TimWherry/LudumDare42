@@ -67,6 +67,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4766269705076446}
   - component: {fileID: 212469329230592534}
+  - component: {fileID: 114600380554343092}
   m_Layer: 0
   m_Name: adopter
   m_TagString: Untagged
@@ -89,7 +90,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1733554968914538
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,7 +136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4091404129744736
 Transform:
   m_ObjectHideFlags: 1
@@ -234,7 +235,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1505226712959674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.3798747, y: 0.7090646, z: 0}
+  m_LocalPosition: {x: 16.782259, y: 4.4814177, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children:
   - {fileID: 4297141422153068}
@@ -247,6 +248,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114600380554343092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1505226712959674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ea76acf88eeed34c9422ea1975a4cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoseHolder: {fileID: 1869008400780320}
+  m_MouthHolder: {fileID: 1200194080788898}
+  m_HairHolder: {fileID: 1733554968914538}
+  m_Mouths:
+  - {fileID: 1030237116301072, guid: bed36d6f7a4df9548b777c2c27e15f0d, type: 2}
+  - {fileID: 1457901415465376, guid: 65f958052e6deb7499e3a506b7e76f68, type: 2}
+  - {fileID: 1580997428875032, guid: 022745ab40841684cbc530695f618aa7, type: 2}
+  m_Noses:
+  - {fileID: 1091535750896936, guid: f62e6886d0214f849947bbb205425c25, type: 2}
+  - {fileID: 1581299314321858, guid: 253790b25ec86e64e99dac9607428587, type: 2}
+  m_Hairs:
+  - {fileID: 1062729239374546, guid: aef97481b703ba94b882c5787e5ca946, type: 2}
+  - {fileID: 1489366890832222, guid: 3e1690493eb2c05479fa680dffe07360, type: 2}
+  - {fileID: 1262806865586508, guid: 023287e6c68c7894aa63b4351b340b7a, type: 2}
+  m_Traits:
+  - {fileID: 1986941184827778}
+  - {fileID: 1634482596879376}
 --- !u!212 &212269561304867862
 SpriteRenderer:
   m_ObjectHideFlags: 1
