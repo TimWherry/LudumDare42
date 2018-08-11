@@ -21,6 +21,8 @@ public class scr_AdoptionManager : MonoBehaviour
     [SerializeField]
     TextMeshPro cashMesh;
 
+    private scr_Audio m_Audio;
+
     public void f_SetNumberOfTraits(int num)
     {
         m_KittyTraits = new eKittyTrait[num];
@@ -37,7 +39,7 @@ public class scr_AdoptionManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        m_Audio = GameObject.FindObjectOfType<scr_Audio>();
     }
 
     // Update is called once per frame
@@ -104,6 +106,7 @@ public class scr_AdoptionManager : MonoBehaviour
             Destroy(script.gameObject);
             Destroy(m_KittySelected);
             f_ClearTraits();
+            m_Audio.f_PlayCatSell();
         }
     }
 

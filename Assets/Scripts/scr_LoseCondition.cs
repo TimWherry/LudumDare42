@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class scr_LoseCondition : MonoBehaviour
 {
@@ -42,7 +43,13 @@ public class scr_LoseCondition : MonoBehaviour
         }
         else
         {
-            m_LoseText.text = "You Lost";
+            m_LoseText.text = "You Lost\nTry Again?";
+            if (Input.GetMouseButtonDown(0))
+            {
+                SceneManager.LoadScene(1);
+                m_LoseText.text = "";
+                m_DidLose = false;
+            }
         }
     }
 }

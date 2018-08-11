@@ -13,7 +13,7 @@ public class scr_KittySpawner : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        SpawnKitty();
     }
 
     // Update is called once per frame
