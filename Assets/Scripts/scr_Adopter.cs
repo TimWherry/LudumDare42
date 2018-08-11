@@ -38,6 +38,35 @@ public class scr_Adopter : MonoBehaviour
         display.transform.localPosition = new Vector3(0.0f, 0.0f, -0.01f);
     }
 
+    public bool f_AreTraitsValid(eKittyTrait[] traits)
+    {
+        bool firstValid = false;
+        bool secondValid = false;
+        for (int i = 0; i < traits.Length; ++i)
+        {
+            for(int j = 0; j < m_KittyTraits.Length; ++j)
+            {
+                if(m_KittyTraits[j].Equals(traits[i]))
+                {
+                    if(!firstValid)
+                    {
+                        firstValid = true;
+                    }
+                    else
+                    {
+                        secondValid = true;
+                    }
+                }
+            }
+        }
+
+        if(traits.Length == 1 || m_KittyTraits.Length == 1)
+        {
+            return firstValid;
+        }
+        return firstValid && secondValid;
+    }
+
     // Use this for initialization
     void Start()
     {

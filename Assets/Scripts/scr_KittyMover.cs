@@ -36,6 +36,21 @@ public class scr_KittyMover : MonoBehaviour
         display.transform.localPosition = new Vector3(0.0f, 0.0f, -0.01f);
     }
 
+    public int f_GetNumberOfTraits()
+    {
+        return m_KittyTraits.Length;
+    }
+
+    public eKittyTrait f_GetTrait(int index)
+    {
+        return m_KittyTraits[index];
+    }
+
+    public eKittyTrait[] f_GetTraits()
+    {
+        return m_KittyTraits;
+    }
+
     private void f_SetRandomLook()
     {
         f_SetRandomColor();
@@ -80,6 +95,8 @@ public class scr_KittyMover : MonoBehaviour
             f_RollWalker();
         }
         rigidbody.velocity = m_WalkDirection * m_Speed;
+
+        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.y);
     }
 
     private void f_RollWalker()
