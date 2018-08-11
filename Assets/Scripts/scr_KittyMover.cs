@@ -20,6 +20,7 @@ public class scr_KittyMover : MonoBehaviour
     void Start()
     {
         f_SetRandomLook();
+        rigidbody = GetComponent<Rigidbody2D>();
     }
 
     public void f_SetNumberOfTraits(int num)
@@ -66,6 +67,8 @@ public class scr_KittyMover : MonoBehaviour
     private float m_Speed = 5.0f;
     private Vector2 m_WalkDirection;
 
+    private Rigidbody2D rigidbody;
+
     // Update is called once per frame
     void Update()
     {
@@ -74,10 +77,7 @@ public class scr_KittyMover : MonoBehaviour
         {
             f_RollWalker();
         }
-        Vector3 newPos = transform.position + new Vector3(m_WalkDirection.x * m_Speed * Time.deltaTime, m_WalkDirection.y * m_Speed * Time.deltaTime, m_WalkDirection.y * m_Speed * Time.deltaTime);
-        newPos.x = Mathf.Clamp(newPos.x, -20.0f, 10.0f);
-        newPos.y = Mathf.Clamp(newPos.y, -10.0f, 10.0f);
-        transform.position = newPos;
+        rigidbody.velocity = m_WalkDirection * m_Speed;
     }
 
     private void f_RollWalker()
