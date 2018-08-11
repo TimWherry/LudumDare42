@@ -27,10 +27,13 @@ public class scr_AdopterSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float random = Random.Range(0.0f, 1.0f);
-        if (random <= 0.01f)
+        if (!scr_LoseCondition.f_DidLose())
         {
-            AttemptToSpawnAdopter();
+            float random = Random.Range(0.0f, 1.0f);
+            if (random <= 0.01f)
+            {
+                AttemptToSpawnAdopter();
+            }
         }
     }
 

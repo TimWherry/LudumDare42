@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class scr_AdoptionManager : MonoBehaviour
@@ -16,6 +17,9 @@ public class scr_AdoptionManager : MonoBehaviour
 
     [SerializeField]
     private int m_Cash = 0;
+
+    [SerializeField]
+    TextMeshPro cashMesh;
 
     public void f_SetNumberOfTraits(int num)
     {
@@ -39,33 +43,45 @@ public class scr_AdoptionManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (!scr_LoseCondition.f_DidLose())
         {
-            Collider2D[] colliders = Physics2D.OverlapPointAll(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-
-            GameObject selectedKitty = f_FindValidCat(colliders);
-            if (selectedKitty != null)
+            cashMesh.text = "$" + m_Cash;
+            if (Input.GetMouseButtonDown(0))
             {
-                f_ClearTraits();
-                m_KittySelected = selectedKitty;
-                f_SelectCat(selectedKitty);
-            }
+                Collider2D[] colliders = Physics2D.OverlapPointAll(Camera.main.ScreenToWorldPoint(Input.mousePosition));
 
-            if (colliders.Length > 0)
-            {
-                Collider2D adopterCollider = null;
-                for(int i = 0; i < colliders.Length; ++i)
+                GameObject selectedKitty = f_FindValidCat(colliders);
+                if (selectedKitty != null)
                 {
-                    if(colliders[i].tag.Equals("Adopter"))
-                    {
-                        adopterCollider = colliders[i];
-                    }
+                    f_ClearTraits();
+                    m_KittySelected = selectedKitty;
+                    f_SelectCat(selectedKitty);
                 }
-                if (adopterCollider != null)
+
+                if (colliders.Length > 0)
                 {
-                    if (m_KittySelected != null)
+                    Collider2D adopterCollider = null;
+                    for (int i = 0; i < colliders.Length; ++i)
                     {
-                        f_AttemptAdoption(adopterCollider.GetComponent<scr_Adopter>());
+                        if (colliders[i].tag.Equals("Adopter"))
+                        {
+                            adopterCollider = colliders[i];
+                        }
+                    }
+                    if (adopterCollider != null)
+                    {
+                        if (m_KittySelected != null)
+                        {
+                            f_AttemptAdoption(adopterCollider.GetComponent<scr_Adopter>());
+                        }
+                    }
+                    else
+                    {
+                        if (selectedKitty == null)
+                        {
+                            m_KittySelected = selectedKitty;
+                            f_ClearTraits();
+                        }
                     }
                 }
                 else
@@ -75,14 +91,6 @@ public class scr_AdoptionManager : MonoBehaviour
                         m_KittySelected = selectedKitty;
                         f_ClearTraits();
                     }
-                }
-            }
-            else
-            {
-                if (selectedKitty == null)
-                {
-                    m_KittySelected = selectedKitty;
-                    f_ClearTraits();
                 }
             }
         }

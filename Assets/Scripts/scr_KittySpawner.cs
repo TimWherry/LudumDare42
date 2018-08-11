@@ -19,10 +19,13 @@ public class scr_KittySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float random = Random.Range(0.0f, 1.0f);
-        if(random <= 0.01f)
+        if (!scr_LoseCondition.f_DidLose())
         {
-            SpawnKitty();
+            float random = Random.Range(0.0f, 1.0f);
+            if (random <= 0.015f)
+            {
+                SpawnKitty();
+            }
         }
     }
 
@@ -30,7 +33,14 @@ public class scr_KittySpawner : MonoBehaviour
     {
         int numTraits = Random.Range(1, 3);
 
-        GameObject newKitty = GameObject.Instantiate(m_BaseKitty, transform.position, Quaternion.identity);
+        GameObject[] kitties = GameObject.FindGameObjectsWithTag("Kitty");
+        Vector3 position = Vector3.zero;
+        if(kitties.Length > 0)
+        {
+            position = kitties[Random.Range(0, kitties.Length)].transform.position;
+        }
+
+        GameObject newKitty = GameObject.Instantiate(m_BaseKitty, position, Quaternion.identity);
         scr_KittyMover script = newKitty.GetComponent<scr_KittyMover>();
         script.f_SetNumberOfTraits(numTraits);
         eKittyTrait firstTrait = eKittyTrait.None;

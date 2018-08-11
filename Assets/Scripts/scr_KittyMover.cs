@@ -89,14 +89,21 @@ public class scr_KittyMover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        m_WalkTimer -= Time.deltaTime;
-        if(m_WalkTimer <= 0.0f)
+        if (!scr_LoseCondition.f_DidLose())
         {
-            f_RollWalker();
-        }
-        rigidbody.velocity = m_WalkDirection * m_Speed;
+            m_WalkTimer -= Time.deltaTime;
+            if (m_WalkTimer <= 0.0f)
+            {
+                f_RollWalker();
+            }
+            rigidbody.velocity = m_WalkDirection * m_Speed;
 
-        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.y);
+            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.y + 10.0f);
+        }
+        else
+        {
+            rigidbody.velocity = Vector2.zero;
+        }
     }
 
     private void f_RollWalker()
