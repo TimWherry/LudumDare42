@@ -26,16 +26,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="-787.57406"
-     inkscape:cy="719.10369"
+     inkscape:cx="-302.70084"
+     inkscape:cy="246.3523"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:lockguides="false"
-     inkscape:window-width="2845"
-     inkscape:window-height="1413"
-     inkscape:window-x="771"
-     inkscape:window-y="931"
+     inkscape:window-width="794"
+     inkscape:window-height="459"
+     inkscape:window-x="114"
+     inkscape:window-y="114"
      inkscape:window-maximized="0"
      showguides="true" />
   <metadata
@@ -552,5 +552,16 @@
          id="ellipse5311"
          style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect896"
+       width="79.861305"
+       height="79.236443"
+       x="-110.79292"
+       y="65.793144"
+       ry="6.6929955"
+       inkscape:export-filename="E:\Dev\LudumDare42\Assets\Art\portrait_trait.png"
+       inkscape:export-xdpi="67.910004"
+       inkscape:export-ydpi="67.910004" />
   </g>
 </svg>
