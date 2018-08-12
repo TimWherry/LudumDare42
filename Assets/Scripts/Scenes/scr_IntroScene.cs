@@ -9,11 +9,14 @@ public class scr_IntroScene : MonoBehaviour
     private float m_NameScreenTimer = 0.75f;
     private bool m_IsTitleScreen = false;
     private float m_TitleScreenTimer = 1.25f;
+    private bool m_IsBackgroundInfo = false;
 
     [SerializeField]
     private GameObject m_NameText;
     [SerializeField]
     private GameObject m_GameText;
+    [SerializeField]
+    private GameObject m_BackgroundInfo;
     [SerializeField]
     private GameObject m_InstructionText;
     // Use this for initialization
@@ -43,10 +46,19 @@ public class scr_IntroScene : MonoBehaviour
             {
                 m_GameText.SetActive(false);
                 m_IsTitleScreen = false;
+                m_IsBackgroundInfo = true;
+                m_BackgroundInfo.SetActive(true);
+            }
+        }
+        else if(m_IsBackgroundInfo)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                m_IsBackgroundInfo = false;
                 m_InstructionText.SetActive(true);
             }
         }
-        else if(!m_IsNameScreen && !m_IsTitleScreen)
+        else if(!m_IsNameScreen && !m_IsTitleScreen && !m_IsBackgroundInfo)
         {
             if(Input.GetMouseButtonDown(0))
             {

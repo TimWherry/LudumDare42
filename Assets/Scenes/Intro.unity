@@ -229,20 +229,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 33945488956369400, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 33612965529040426, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1773102161825186, guid: a7b090fade4436042b4dfc770cc204e9, type: 2}
-      propertyPath: m_Name
-      value: IntroManager
-      objectReference: {fileID: 0}
     - target: {fileID: 33805913925174928, guid: a7b090fade4436042b4dfc770cc204e9,
         type: 2}
       propertyPath: m_Mesh
@@ -258,16 +244,6 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114096459163460064, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114096459163460064, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 114032693859164020, guid: a7b090fade4436042b4dfc770cc204e9,
         type: 2}
       propertyPath: m_havePropertiesChanged
@@ -277,108 +253,6 @@ Prefab:
         type: 2}
       propertyPath: m_isInputParsingRequired
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1202177115177966, guid: a7b090fade4436042b4dfc770cc204e9, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1475231015545368, guid: a7b090fade4436042b4dfc770cc204e9, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114096459163460064, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_text
-      value: 'TOO
-
-        MANY
-
-        CATS'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114096459163460064, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_textInfo.characterCount
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 114096459163460064, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_textInfo.spaceCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114096459163460064, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_textInfo.wordCount
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114096459163460064, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_textInfo.lineCount
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114096459163460064, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_fontColor.r
-      value: 0.8666667
-      objectReference: {fileID: 0}
-    - target: {fileID: 114096459163460064, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_fontColor.g
-      value: 0.05098039
-      objectReference: {fileID: 0}
-    - target: {fileID: 114096459163460064, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_fontColor.b
-      value: 0.124505855
-      objectReference: {fileID: 0}
-    - target: {fileID: 114096459163460064, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_fontColor32.rgba
-      value: 4280224989
-      objectReference: {fileID: 0}
-    - target: {fileID: 1458258313667740, guid: a7b090fade4436042b4dfc770cc204e9, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114032693859164020, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_fontSize
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 114032693859164020, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_fontSizeBase
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 114032693859164020, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_text
-      value: 'Match cats to potential
-
-        adopters, they must be
-
-        willing to put up with
-
-        how the cat will act.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114032693859164020, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_textInfo.characterCount
-      value: 91
-      objectReference: {fileID: 0}
-    - target: {fileID: 114032693859164020, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_textInfo.spaceCount
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 114032693859164020, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_textInfo.wordCount
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 114032693859164020, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_textInfo.lineCount
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7b090fade4436042b4dfc770cc204e9, type: 2}
