@@ -55,6 +55,7 @@ public class scr_IntroScene : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 m_IsBackgroundInfo = false;
+                m_BackgroundInfo.SetActive(false);
                 m_InstructionText.SetActive(true);
             }
         }
