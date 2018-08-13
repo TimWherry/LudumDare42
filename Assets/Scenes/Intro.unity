@@ -244,21 +244,18 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114032693859164020, guid: a7b090fade4436042b4dfc770cc204e9,
+    - target: {fileID: 33612965529040426, guid: a7b090fade4436042b4dfc770cc204e9,
         type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 114032693859164020, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
+    - target: {fileID: 1458258313667740, guid: a7b090fade4436042b4dfc770cc204e9, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114032693859164020, guid: a7b090fade4436042b4dfc770cc204e9,
-        type: 2}
-      propertyPath: m_text
-      value: "OH NO!\nYour cat has started to \nasexually reproduce!\nYou need to
-        get rid of cats, FAST!"
+    - target: {fileID: 1202177115177966, guid: a7b090fade4436042b4dfc770cc204e9, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7b090fade4436042b4dfc770cc204e9, type: 2}
